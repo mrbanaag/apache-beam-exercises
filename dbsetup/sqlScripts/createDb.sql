@@ -8,7 +8,7 @@ CREATE TABLE mba_decision (
     years_of_work_experience INTEGER,
     current_job_title VARCHAR(255),
     annual_salary FLOAT,
-    has_management_experience BOOLEAN,
+    has_management_experience VARCHAR(50),
     gre_gmat_score INTEGER,
     undergrad_university_ranking INTEGER,
     entrepreneurial_interest FLOAT,
@@ -19,7 +19,7 @@ CREATE TABLE mba_decision (
     location_preference VARCHAR(255),
     reason_for_mba VARCHAR(255),
     online_vs_on_campus VARCHAR(255),
-    decided_to_pursue_mba BOOLEAN,
+    decided_to_pursue_mba VARCHAR(50),
     PRIMARY KEY (id)
 );
 COPY mba_decision(
